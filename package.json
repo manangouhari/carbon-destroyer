@@ -1,0 +1,37 @@
+{
+  "name": "offsetter",
+  "version": "1.0.0",
+  "description": "Custom Celo Composer project.",
+  "private": true,
+  "author": "Celo",
+  "license": "MIT",
+  "scripts": {
+    "react-app:dev": "yarn workspace @offsetter/react-app dev",
+    "react-app:build": "yarn workspace @offsetter/react-app build",
+    "react-app:start": "yarn workspace @offsetter/react-app start",
+    "react-app:lint": "yarn workspace @offsetter/react-app lint",
+    "hardhat:test": "yarn workspace @offsetter/hardhat test",
+    "hardhat:test-local": "yarn workspace @offsetter/hardhat test-local",
+    "hardhat:accounts": "yarn workspace @offsetter/hardhat accounts",
+    "hardhat:devchain": "yarn workspace @offsetter/hardhat devchain",
+    "hardhat:deploy": "yarn workspace @offsetter/hardhat deploy",
+    "hardhat:deploy-reset-watch": "yarn workspace @offsetter/hardhat deploy-reset-watch",
+    "hardhat:watch": "yarn workspace @offsetter/hardhat watch",
+    "hardhat:fork-mainnet": "yarn workspace @offsetter/hardhat fork-mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celo-org/celo-composer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/celo-org/celo-composer/issues"
+  },
+  "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "celo-composer",
+    "celo"
+  ]
+}

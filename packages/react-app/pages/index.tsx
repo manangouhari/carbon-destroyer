@@ -36,7 +36,7 @@ export default function Home() {
     if (walletConnected) {
       fetchNCTBalance(signer).then((res) => setPoolTokenBalance(res));
     }
-  }, [walletConnected]);
+  }, [walletConnected, signer]);
 
   return (
     <div>
@@ -186,7 +186,7 @@ const RetiringModal: React.FC<{
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                          Retiring carbon is a two-step process. You'll be
+                          Retiring carbon is a two-step process. You&apos;ll be
                           prompted for both the transactions on your wallet.
                         </p>
                       </div>
@@ -255,7 +255,7 @@ const RetiringModal: React.FC<{
                         as="h3"
                         className="text-lg font-medium leading-6 text-error"
                       >
-                        Your didn't retire carbon 😔
+                        Your didn&apos;t retire carbon 😔
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
@@ -298,8 +298,8 @@ const FAQ = () => {
           <p>
             Carbon Destroyer is powered by Toucan Protocol. Toucan is a DeFi
             Protocol focused on tokenizing real-world carbon credits. We
-            leverage Toucan's infra to redeem credits from $NCT and retire all
-            the credits.
+            leverage Toucan&apos;s infra to redeem credits from $NCT and retire
+            all the credits.
           </p>
         </div>
         <div className="mt-4">
@@ -321,8 +321,8 @@ const FAQ = () => {
             >
               buy $NCT on Ubeswap
             </a>{" "}
-            using whichever token you prefer. It's a normal ERC-20, hence, can
-            be traded on decentralised exchanges.
+            using whichever token you prefer. It&apos;s a normal ERC-20, hence,
+            can be traded on decentralised exchanges.
           </p>
         </div>
         <div className="mt-4">
